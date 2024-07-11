@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+  <meta charset="UTF-8">
+
+  <!-- Incluez d'abord la feuille de style Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("bg.jpeg");
+      background-size: cover;
+    }
+    header {
+      background-color: #5f5f5f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     
+    }
+ 
+    .logo {
+      width: 170px;
+      height: 75px;
+      
+
+    }
+    .profile-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    .images-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .centered-image {
+      margin-top: 15%;
+      width: 60%;
+      height: 80%;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (min-width: 768px) {
+      .centered-image {
+        margin-top: 30%;
+    }
+  }
+    .image-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      text-align: center;
+    }
+    .divider {
+      border-top: 7px solid #000;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="Logo" class="logo">
+  <img src="i22.png" alt="Profile" class="profile-image">
+</header>
+
+<hr class="divider">
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+      <div class="centered-image">
+        <img src="ind.jpg" alt="Image 1" class="img-fluid">
+        <div class="btn-group">
+          <a href="indHome.html">
+          <button type="button" class="btn btn-secondary "  aria-haspopup="true" aria-expanded="false">
+            Industrie
+          </button>
+        </a>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 text-center">
+      <div class="centered-image">
+        <img src="sant.jpg" alt="Image 2" class="img-fluid">
+        <div class="btn-group">
+          <a href="santeHome.html">
+          <button type="button" class="btn btn-secondary "  aria-haspopup="true" aria-expanded="false">
+            Santé
+          </button>
+        </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Incluez jQuery avant le script JavaScript de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
